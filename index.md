@@ -157,7 +157,7 @@ In this example, `grep -i PH biomed/1471-2091-3-17.txt` goes through all of the 
 `grep -w pattern file_name`
 
 First Example: 
-Input: `grep -w drinking government/Alcohol_Problems`
+Input: `grep -w drinking government/Alcohol_Problems/Session2-PDF.txt`
 
 Output: 
 ```
@@ -193,8 +193,16 @@ screening measure for problem drinking among female college
 60. Dawson D, Archer L. Relative frequency of heavy drinking
 ```
 
-Second Example: `grep -w drinking government/Alcohol_Problems`
+Second Example: 
 
+input: `grep -w years plos/journal.pbio.0020042.txt`
+
+output:
+```
+        During the last few years, we have seen enormous strides in our abilities to sequence
+```
+
+The -w option to grep searches for the exact word within a file and returns the line that contains that word. In the second example, we searched for the word years within the `journal.pbio.0020042.txt` file within technical/plos directory which so happens to be the first line of the text. This option to grep is especially helpful if you want to search for a specific word within a file and want it to match exactly in spelling and want it to be case sensitive. In the first example, If we want to search for `Drinking` instead of `drinking,` we would get a completely different result and only display text that contains the word `Drinking` within the `government/Alcohol_Problems/Session2-PDF.txt` file, helping filter out words that don't meet the criteria. 
 
 `grep -r pattern *`
 
