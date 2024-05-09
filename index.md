@@ -556,11 +556,50 @@ Output:
                 kill an individual.
 ```
 
+The command `grep -v t 911report/chapter-6.txt` is used to filter and display lines from the file `911report/chapter-6.txt` that do not contain the letter `"t"`. The `-v` option inverts the search, meaning grep will return only the lines that do not match the search pattern. This can be particularly useful if you want to exclude certain information from the output or focus on lines that lack a specific character or pattern.
+It can be used for data cleaning, or, in this example, to reach lines that don't mention or contain the word `CIA`.
+
+
+Input: `grep -v he government/Media/Advocate_for_Poor.txt`
+
+Output: 
+
+```
+
+
+
+
+New York Daily News
+Tuesday, May 7, 2002
+
+Advocate for Poor Has Own Obstacles
+Greg Wilson
+Nearly a year ago, Mazzariello, a former assistant district
+attorney who grew up in East New York, started a nonprofit practice
+of his East New York Legal Services Corp. on New Lots Ave.
+program," Mazzariello said. "I said, 'Mr. Mayor, we're interested
+were rolling."
+state status that would allow it to survive on charitable
+donations.
+said Mazzariello, who worked under Brooklyn District Attorney
+of Education's chief prosecutor.
+tenant ownership program, Mazzariello and partner Joe Guzzo learned
+
+Program guidelines give tenants priority over commercial users.
+Department spokeswoman Carol Abrams said homeownership comes
+first, even over community-minded agencies like Mazzariello's.
+residential housing agency," Abrams said.
+units are rent-controlled. That makes getting fair market value for
+Preservation and Development Department.
+"But we didn't go into this in bad faith. Everything being done
 
 
 
 
 
+```
+
+The `-v` command to `grep` is used to inverse the search of `he` and print all lines that do not contain the matching pattern. In the second example, we can see that it printed all of the lines that doesn't contain the characters `he`, meaning it didn't print lines that contains words like `the` because `"he"`is within the word `the` It searches through the `government/Media/Advocate_for_Poor.txt` file and looks for the lines that doesn't match the pattern. This can be especially helpful when you want to analyze a piece of text that may potentially exclude the use of pronouns such as `he` or prevent the use of the words `The`. It can also clean up text data by removing lines that are likely to be less relevant.
 
 
 
