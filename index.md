@@ -1,3 +1,5 @@
+**Part 1**
+
 The bug we'll be using is within the reversed method, which returns a new array with all of the elements of the input array in reverse order. 
 
 The Buggy program: 
