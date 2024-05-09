@@ -64,10 +64,10 @@ Source for line commands for `grep`: https://www.golinuxcloud.com/grep-command-i
 
 `grep -i pattern file_name`
 
-First Example: `grep -i desktop biomed/*.txt` 
+First Example: 
+Input: `grep -i desktop biomed/*.txt` 
 
 Output: 
-
 ```
 biomed/1471-2105-4-28.txt:        BPNN, on the other hand, adesktop computer is the only
 biomed/1471-2202-3-1.txt:          disk of a desktop computer. The output is a direct plot
@@ -79,7 +79,10 @@ biomed/gb-2002-3-7-research0037.txt:          written in FORTRAN and run on desk
 biomed/gb-2003-4-6-r41.txt:        a desktop computer. To make this methodology better suited
 ```
 
-Second Example`grep -i pH biomed/1471-2091-3-17.txt`
+In this example, `grep -i desktop biomed/*txt` goes through all of the .txt files and outputs the files that contain the word `desktop` within `biomed` directory. The -I option makes the search case-insensitive, meaning it will look through all of the files that contain the word DESKTOP, Desktop or Desktop, etc. This command is useful for finding occurrences of the word "desktop" across multiple text files in a specific directory, which could be helpful for reviewing mentions of desktop environments, desktop applications, or other desktop-related content in text files.
+
+Second Example:
+Input: `grep -i PH biomed/1471-2091-3-17.txt`
 
 Output: 
 ```
@@ -149,8 +152,45 @@ relevant to understanding the pathophysiology of jaundice
           in 0.1 M Tris-HCl buffer, pH 7.01. Microcentrifugation
         a given pH; S
 ```
+In this example, `grep -i PH biomed/1471-2091-3-17.txt` goes through all of the `1471-2091-3-17.txt` file within the `biomed` directory and outputs the files that contain the word `pH` within `biomed` directory. The -i option makes the search case-insensitive. It allows the command to find "pH", "Ph", "pH", and "PH", treating them all as equivalent. This command is useful for finding occurrences of the word "ph" within a specific file, which can be useful in separating scientific information and data within scientific works to find all mentions of pH regardless of how it is capitalized in the document.
 
 `grep -w pattern file_name`
+
+First Example: 
+Input: `grep -w drinking government/Alcohol_Problems`
+
+Output: 
+
+`disease develops. WHO defines hazardous drinking as 4 or more
+drinking as consumption of more than 14 drinks/week or more than 4
+drinks/occasion is considered at risk. Binge drinking alone is also
+identifying patients with binge drinking, we can define binge
+drinking as 3, 4, 5, or 6 drinks on an occasion. Screening tests
+spontaneously volunteer information about drinking. Cherpitel
+reported that patient self-report of drinking prior to arrival had
+setting-"Have you ever had a drinking problem?"-had a high
+at-risk drinking in addition to alcohol abuse and dependence. AUDIT
+at-risk drinking, alcohol abuse, and dependence. It is a
+those screens, which covered feeling guilty after drinking,
+blackouts, failing to do what is normally expected after drinking,
+and morning drinking. However, this new instrument has not been
+drinking, or abuse.5,36
+primary care setting. For at-risk, hazardous, or harmful drinking,
+self-reported drinking.7 In another ED study, a saliva alcohol
+drinkers: lack of sensitivity of the two-question drinking test. Am
+drinking: does a single question work? J Fam Pract
+pregnancy risk-drinking. Alcohol Clin Exp Res 1994;18:1156-61.
+prenatal detection of risk-drinking. Am J Obstet Gynecol
+drinking in the emergency room: the RAPS4. Rapid Alcohol Problems
+instruments for problem drinking among blacks, whites and Hispanics
+screening instruments for identifying harmful drinking and alcohol
+hazardous/harmful drinking among subcritically injured patients.
+A. Screening for excessive alcohol drinking: comparative value of
+Screening for problem drinking in college freshmen. J Am Coll
+drinking in college students. J Am Coll Health 1991;39:227-31.
+drinking among college freshman. J Adolesc Health
+screening measure for problem drinking among female college
+60. Dawson D, Archer L. Relative frequency of heavy drinking`
 
 `grep -r pattern *`
 
