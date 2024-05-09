@@ -64,7 +64,9 @@ Source for line commands for `grep`: https://www.golinuxcloud.com/grep-command-i
 
 `grep -i pattern file_name`
 `-i` command
+
 First Example: 
+
 Input: `grep -i desktop biomed/*.txt` 
 
 Output: 
@@ -82,6 +84,7 @@ biomed/gb-2003-4-6-r41.txt:        a desktop computer. To make this methodology 
 In this example, `grep -i desktop biomed/*txt` goes through all of the .txt files and outputs the files that contain the word `desktop` within `biomed` directory. The -I option makes the search case-insensitive, meaning it will look through all of the files that contain the word DESKTOP, Desktop or Desktop, etc. This command is useful for finding occurrences of the word "desktop" across multiple text files in a specific directory, which could be helpful for reviewing mentions of desktop environments, desktop applications, or other desktop-related content in text files.
 
 Second Example:
+
 Input: `grep -i PH biomed/1471-2091-3-17.txt`
 
 Output: 
@@ -156,6 +159,7 @@ In this example, `grep -i PH biomed/1471-2091-3-17.txt` goes through all of the 
 
 `grep -w pattern file_name`
 `-w` command
+
 First Example: 
 
 Input: `grep -w drinking government/Alcohol_Problems/Session2-PDF.txt`
@@ -208,6 +212,7 @@ The -w option to grep searches for the exact word within a file and returns the 
 
 `grep -r pattern *`
 `-r` command
+
 First Example: 
 Input: `grep -r "thanks" plos`
 
@@ -566,6 +571,7 @@ The command `grep -v t 911report/chapter-6.txt` is used to filter and display li
 It can be used for data cleaning, or, in this example, to reach lines that don't mention or contain the word `CIA`.
 
 Second Example: 
+
 Input: `grep -v he government/Media/Advocate_for_Poor.txt`
 
 Output: 
