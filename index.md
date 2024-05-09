@@ -565,7 +565,7 @@ Output:
 The command `grep -v t 911report/chapter-6.txt` is used to filter and display lines from the file `911report/chapter-6.txt` that do not contain the letter `"t"`. The `-v` option inverts the search, meaning grep will return only the lines that do not match the search pattern. This can be particularly useful if you want to exclude certain information from the output or focus on lines that lack a specific character or pattern.
 It can be used for data cleaning, or, in this example, to reach lines that don't mention or contain the word `CIA`.
 
-
+Second Example: 
 Input: `grep -v he government/Media/Advocate_for_Poor.txt`
 
 Output: 
