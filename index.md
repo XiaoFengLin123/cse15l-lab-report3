@@ -42,7 +42,7 @@ Old with buggy code:
   }
 ```
 
-New with fixed code 
+New with fixed code:
 
 ```
   static int[] reversed(int[] arr) {
@@ -53,3 +53,5 @@ New with fixed code
     return newArray;
   }
 ```
+
+The fixed code address the issues with the old code by filling in the `newArray` with elements from the original array `arr` itself. By using changing `newArrya[i] = arr[arr.length - i - i]` from `arr[i] = newArray[arr.length - i - 1]`. We are able to get the elements from the original array in a reverse order and put them into the new array. It ensures that elements from the end of `arr` is placed corresponding to the start of the `newArray`. The changed code also outputs the new array `newArray` with the reversed elements instead of the original array `arr` which allowed the `testReversed()` to pass since it just outputs an empty array since it doesn't need to reverse the elements within an empty array. 
