@@ -206,7 +206,44 @@ The -w option to grep searches for the exact word within a file and returns the 
 
 `grep -r pattern *`
 
+First Example: 
+Input: `grep -r "thanks" plos`
 
+Output: 
+```
+$ grep -r "thanks" plos
+plos/journal.pbio.0020404.txt:        release of several other neurotransmitters. This wisdom exists thanks in part to work by
+plos/pmed.0020033.txt:        The diagnosis and management of disease could be transformed thanks to the completion of
+plos/pmed.0020039.txt:        billion in 2001 to US$6.1 billion in 2004 [1], thanks to several new funding mechanisms
+plos/pmed.0020047.txt:        thanks to the Public Library of Science for leading the campaign that is now gaining
+```
+
+The `grep -r "thanks" plos` is used to search recursively for the string "thanks" within all files and subdirectories in the plos directory. it searches recursively through all directories and subdirectories to look for and match files that contain the word `thanks`. This is beneficial because it provides a quick way to search through large volumes of text without needing to open and read each file manually
+
+Second Example: `grep -r "thanks" *`
+```
+grep -r "thanks" *
+911report/chapter-13.2.txt:                uh, yelling too." The FAA responded at 9:31:51,"Okay, thanks. We're just trying to
+911report/chapter-2.txt:            Bin Ladin eventually enjoyed a strong financial position in Afghanistan, thanks to
+911report/chapter-3.txt:                Gore later added his thanks to those of Tenet, both making clear that they spoke
+911report/preface.txt:            We conclude this list of thanks by coming full circle: We thank the families of 9/11,
+biomed/1472-6807-1-1.txt:        with novel structural features, thanks to a powerful
+biomed/1472-6807-3-1.txt:          retained the RDRPs thanks to the selective advantage
+biomed/gb-2002-3-10-research0055.txt:          thanks to the low requirements in the volume of
+government/Media/Assuring_Underprivileged.txt:with which she thanks them for their time.
+government/Media/Bridging_legal_aid_gap.txt:all Californians. In 1999, thanks to Gov. Gray Davis and leaders in
+government/Media/Commercial_Appeal.txt:growth and survival, thanks to a new focus by the Community
+government/Media/Firm_to_the_Poor_Needs_Help.txt:Services are expanding, however, thanks to a $1 million public
+government/Media/less_legal_aid.txt:Illinois' poor will have less access to free lawyers thanks to a
+government/Media/Pro-bono_road_show.txt:Now, thanks to a new community courthouse that opened this week
+government/Post_Rate_Comm/Gleiman_EMASpeech.txt:thanks to you for having me here today. If for no other reason, it
+plos/journal.pbio.0020404.txt:        release of several other neurotransmitters. This wisdom exists thanks in part to work by
+plos/pmed.0020033.txt:        The diagnosis and management of disease could be transformed thanks to the completion of
+plos/pmed.0020039.txt:        billion in 2001 to US$6.1 billion in 2004 [1], thanks to several new funding mechanisms
+plos/pmed.0020047.txt:        thanks to the Public Library of Science for leading the campaign that is now gaining
+```
+
+The command `grep -r "thanks" *` searches recursively for the string "thanks" in all files and directories starting from the current directory, which is technical/. it tells `grep` to search for `thanks` recursively, meaning it will look into every file in the current directory and all subdirectories. The `*` or wild card character means that we will search through all of the files and directories within the current directory, which is the `technical/`directory. This command is very useful for searching through a large number of files or a complex directory structure without needing to open each file manually. It can quickly locate all instances of a specific word or phrase. It also provides the file directories where the word appears, which can help in understanding how the word is being used across different documents.
 
 `grep -v pattern file_name`
 
