@@ -63,6 +63,7 @@ The fixed code address the issues with the old code by filling in the `newArray`
 Source for line commands for `grep`: https://www.golinuxcloud.com/grep-command-in-linux/#google_vignette
 
 `grep -i pattern file_name`
+
 `-i` command
 
 First Example: 
@@ -158,6 +159,7 @@ relevant to understanding the pathophysiology of jaundice
 In this example, `grep -i PH biomed/1471-2091-3-17.txt` goes through all of the `1471-2091-3-17.txt` file within the `biomed` directory and outputs the files that contain the word `pH` within `biomed` directory. The -i option makes the search case-insensitive. It allows the command to find "pH", "Ph", "pH", and "PH", treating them all as equivalent. This command is useful for finding occurrences of the word "ph" within a specific file, which can be useful in separating scientific information and data within scientific works to find all mentions of pH regardless of how it is capitalized in the document.
 
 `grep -w pattern file_name`
+
 `-w` command
 
 First Example: 
@@ -211,6 +213,7 @@ output:
 The -w option to grep searches for the exact word within a file and returns the line that contains that word. In the second example, we searched for the word years within the `journal.pbio.0020042.txt` file within technical/plos directory which so happens to be the first line of the text. This option to grep is especially helpful if you want to search for a specific word within a file and want it to match exactly in spelling and want it to be case sensitive. 
 
 `grep -r pattern *`
+
 `-r` command
 
 First Example: 
@@ -256,6 +259,7 @@ plos/pmed.0020047.txt:        thanks to the Public Library of Science for leadin
 The command `grep -r "thanks" *` searches recursively for the string "thanks" in all files and directories starting from the current directory, which is technical/. it tells `grep` to search for `thanks` recursively, meaning it will look into every file in the current directory and all subdirectories. The `*` or wild card character means that we will search through all of the files and directories within the current directory, which is the `technical/`directory. This command is very useful for searching through a large number of files or a complex directory structure without needing to open each file manually. It can quickly locate all instances of a specific word or phrase. It also provides the file directories where the word appears, which can help in understanding how the word is being used across different documents.
 
 `grep -v pattern file_name`
+
 `-v` command
 
 First Example: 
