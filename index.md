@@ -222,9 +222,12 @@ plos/pmed.0020047.txt:        thanks to the Public Library of Science for leadin
 
 The `grep -r "thanks" plos` is used to search recursively for the string "thanks" within all files and subdirectories in the plos directory. it searches recursively through all directories and subdirectories to look for and match files that contain the word `thanks`. This is beneficial because it provides a quick way to search through large volumes of text without needing to open and read each file manually
 
-Second Example: `grep -r "thanks" *`
+Second Example: 
+
+Input: `grep -r "thanks" *`
+
+Output:
 ```
-grep -r "thanks" *
 911report/chapter-13.2.txt:                uh, yelling too." The FAA responded at 9:31:51,"Okay, thanks. We're just trying to
 911report/chapter-2.txt:            Bin Ladin eventually enjoyed a strong financial position in Afghanistan, thanks to
 911report/chapter-3.txt:                Gore later added his thanks to those of Tenet, both making clear that they spoke
