@@ -31,4 +31,25 @@ Non Failure Inducing Input:
  Symptoms For testReversed2() and testReversed(): 
 ![image](https://github.com/XiaoFengLin123/cse15l-lab-report3/assets/146484956/742d3d93-1052-40b0-bc49-6029197561cb)
 
+Old with buggy code: 
+``` 
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
 
+New with fixed code 
+
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
