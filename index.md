@@ -247,3 +247,320 @@ The command `grep -r "thanks" *` searches recursively for the string "thanks" in
 
 `grep -v pattern file_name`
 
+First Example: 
+
+Input: `grep -v t 911report/chapter-6.txt`
+
+Output: 
+```
+
+
+            FROM THREAT TO THREAT
+
+                    weapons.
+
+
+            THE MILLENNIUM CRISIS
+            "Bodies Will Pile Up in Sacks"
+
+
+
+
+                    Deek.
+
+
+                    sacks."
+
+
+
+
+
+                    overseas.
+
+                    papers.
+
+
+
+
+
+
+
+                asylum. He was released pending a hearing, which was adjourned and rescheduled five
+
+                    ferry.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                al Mihdhar.
+
+
+
+
+
+
+                    Thailand.
+
+
+                    Angeles.
+
+
+            POST-CRISIS REFLECTION: AGENDA FOR 2000
+
+                    home.
+
+
+
+
+
+
+
+                    Ladin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    frozen.
+
+                Bank of New York, were also frozen.
+
+
+
+
+
+
+                    flows.
+
+
+
+                of Congress.
+
+
+
+            They included
+
+
+                        proceedings;
+
+
+
+
+            Clarke's working group compiled new proposals as well, such as
+
+                        origin.
+
+
+            "Afghan Eyes"
+
+
+
+
+
+                    risky.
+
+
+
+                    plan.
+
+
+
+
+
+
+
+
+
+
+
+
+            THE ATTACK ON THE USS COLE
+
+
+                    Aden.
+
+
+
+
+
+
+
+
+
+                CIA and FBI officers. The source had called Khallad Bin Ladin's "run boy," and
+
+                more well-known.
+
+                in 2002 and 2003.
+            Considering a Response
+
+
+                Mullah Omar's regime.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                produce change.
+
+
+
+            CHANGE AND CONTINUITY
+                    years.
+
+
+
+
+                    process.
+
+
+
+
+
+
+
+
+
+
+
+            Early Decisions
+
+
+
+
+
+
+
+
+                    CIA.
+
+
+
+
+
+
+
+
+                Qaeda.
+
+            THE NEW ADMINISTRATION'S APPROACH
+
+
+
+                    years.
+
+
+
+
+                    2006.
+
+
+            Diplomacy in Blind Alleys
+
+
+
+                    along."
+
+
+
+
+                    concluded.
+
+
+
+
+
+
+
+                    Berger.
+
+
+            Saudi Arabia.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    disagreed.
+
+                    he.
+
+                moving vehicle.
+
+                    herself.
+
+
+
+                engineers. General John Jumper had commanded U.S. air forces in Europe and seen
+
+
+
+                be in order[.]"
+
+
+
+
+                    work.
+
+                spring of 2002.
+
+                kill an individual.
+```
+
+
+
+
+
+
+
+
+
