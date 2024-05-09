@@ -160,8 +160,8 @@ First Example:
 Input: `grep -w drinking government/Alcohol_Problems`
 
 Output: 
-
-`disease develops. WHO defines hazardous drinking as 4 or more
+```
+disease develops. WHO defines hazardous drinking as 4 or more
 drinking as consumption of more than 14 drinks/week or more than 4
 drinks/occasion is considered at risk. Binge drinking alone is also
 identifying patients with binge drinking, we can define binge
@@ -190,9 +190,15 @@ Screening for problem drinking in college freshmen. J Am Coll
 drinking in college students. J Am Coll Health 1991;39:227-31.
 drinking among college freshman. J Adolesc Health
 screening measure for problem drinking among female college
-60. Dawson D, Archer L. Relative frequency of heavy drinking`
+60. Dawson D, Archer L. Relative frequency of heavy drinking
+```
+
+Second Example: `grep -w drinking government/Alcohol_Problems`
+
 
 `grep -r pattern *`
+
+
 
 `grep -v pattern file_name`
 
