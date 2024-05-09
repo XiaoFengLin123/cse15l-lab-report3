@@ -61,3 +61,12 @@ The fixed code address the issues with the old code by filling in the `newArray`
 **Part 2**
 
 Source for line commands for `grep`: https://www.golinuxcloud.com/grep-command-in-linux/#google_vignette
+
+`grep -i pattern file_name`
+
+`grep -w pattern file_name`
+
+`grep -r pattern *`
+
+`grep -v pattern file_name`
+
